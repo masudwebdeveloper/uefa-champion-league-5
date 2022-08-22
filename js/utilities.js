@@ -9,6 +9,9 @@ function setPlayer(listItemsId, listItemId, name) {
    listItem.innerText = name;
    listItems.appendChild(listItem);
 }
+// select 5 player add start
+
+// select 5 player add end
 function getEventHandeler(elementId) {
    const click = document.getElementById(elementId).addEventListener('click', function () { });
    const selectBtn = document.getElementById(elementId);
@@ -16,11 +19,6 @@ function getEventHandeler(elementId) {
       selectBtn.style.background = 'gray'
       selectBtn.setAttribute('disabled', true);
    }
-}
-
-if (listItems.childNodes.length > 5) {
-   const click = document.getElementsByTagName(button).addEventListener('click', function () { });
-   click.setAttribute('disbaled', true);
 }
 // function setButtonHandeler(btnId, name) {
 //    document.getElementById('btn-one').addEventListener('click', function () {
@@ -34,5 +32,12 @@ function setButtonHandeler(btnId, nameId) {
       const playerName = getElementValue(nameId);
       setPlayer('list-items', 'li', playerName);
       getEventHandeler(btnId);
+      const listItems = document.getElementById('list-items');
+      const child = listItems.children.length;
+      if (child > 4) {
+         const buttons = document.querySelectorAll('.selectbtn');
+         for(const button of buttons)
+         button.setAttribute('disabled', true);
+      }
    })
 }
