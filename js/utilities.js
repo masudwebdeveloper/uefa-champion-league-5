@@ -1,7 +1,7 @@
 function getElementValue(elementId) {
    const elementValueId = document.getElementById(elementId);
-   const elementVlaue = elementValueId.innerText;
-   return elementVlaue;
+   const elementValue = elementValueId.innerText;
+   return elementValue;
 }
 function setPlayer(listItemsId, listItemId, name) {
    const listItems = document.getElementById(listItemsId);

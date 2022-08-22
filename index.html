@@ -146,21 +146,21 @@
                   </div>
                   <div class="bg-zinc-900 mt-10 p-2 rounded-lg text-white">
                      <h2 class="text-3xl text-center my-6">Budget</h2>
-                     <p><span class="font-medium">Per Player </span><input class="px-3 py-2 text-gray-900 rounded mb-6" type="text"
+                     <p><span class="font-medium">Per Player </span><input id="player-input-field" class="px-3 py-2 text-gray-900 rounded mb-6" type="text"
                            placeholder="Per Player cost"></p>
                      <div class="text-center mb-6">
-                        <button class="py-2 text-2xl font-semibold bg-lime-500 w-3/4 rounded-lg">Calculate</button>
+                        <button id="calculate-btn" class="py-2 text-2xl font-semibold bg-lime-500 w-3/4 rounded-lg">Calculate</button>
                      </div>
-                     <h5 class="ml-10 text-xl font-semibold mb-6">Player Expenses: $<span>00</span></h5>
-                     <p><span class="font-medium">Manager </span><input class="px-3 py-2 text-gray-900 rounded mb-6" type="text"
+                     <h5 class="ml-10 text-xl font-semibold mb-6">Player Expenses: $<span id="player-expenses-total">00</span></h5>
+                     <p><span class="font-medium">Manager </span><input id="manager-input-field" class="px-3 py-2 text-gray-900 rounded mb-6" type="text"
                            placeholder="Manager cost"></p>
-                     <p><span class="font-medium">Coach </span><input class="px-3 py-2 text-gray-900 rounded mb-6 ml-5" type="text"
+                     <p><span class="font-medium">Coach </span><input id="coach-input-field" class="px-3 py-2 text-gray-900 rounded mb-6 ml-5" type="text"
                            placeholder="Coach cost"></p>
                      <div class="text-center mb-6">
-                        <button class="py-2 text-2xl font-semibold bg-lime-500 w-3/4 rounded-lg">Calculate
+                        <button id="total-btn" class="py-2 text-2xl font-semibold bg-lime-500 w-3/4 rounded-lg">Calculate
                            total</button>
                      </div>
-                     <h5 class="ml-10 text-xl font-semibold mb-6">Total: $<span>00</span></h5>
+                     <h5 class="ml-10 text-xl font-semibold mb-6">Total: $<span id="total">00</span></h5>
                   </div>
                </div>
             </aside>
@@ -170,6 +170,7 @@
 
    <script src="js/utilities.js"></script>
    <script src="js/selectFive.js"></script>
+   <script src="js/calculate.js"></script>
 </body>
 
 </html>
