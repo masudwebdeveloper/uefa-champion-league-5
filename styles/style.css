@@ -1,0 +1,22 @@
+:root {
+   --dark : #374151;
+   --darker: #1f2937;
+   --darkest: #111827;
+   --gray: #6B7280;
+   --pink: #ED4899;
+   --light: #EEE;
+   --purple: #8b5cf6;
+}
+#header-title{
+   color: var(--pink);
+   font-size: 2.25rem;
+   font-weight: 700;
+   background-image: linear-gradient(to right, var(--pink), var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   cursor: pointer;
+   transition: 0.4s;
+}
+#{
+   background-color: var(--gray);
+}

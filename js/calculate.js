@@ -2,6 +2,7 @@ function getBudgetInputField(inputId) {
    const playerInputFieldId = document.getElementById(inputId);
    const playerInputValueString = playerInputFieldId.value;
    const playerInputValue = parseFloat(playerInputValueString);
+   playerInputFieldId.value = '';
    return playerInputValue;
 }
 document.getElementById('calculate-btn').addEventListener('click', function () {
@@ -38,11 +39,7 @@ document.getElementById('total-btn').addEventListener('click', function () {
    } else if (isNaN(managerAndCoachExpenses)) {
       alert('Please type invalid number');
       return;
-   } else {
-      managerInputValue.value = '';
-      coachInputValue.value = '';
    }
-
    const elementTotalValueId = document.getElementById('total');
    const elementTotalValueString = elementTotalValueId.innerText;
    const previousTotalExpenses = parseFloat(elementTotalValueString);

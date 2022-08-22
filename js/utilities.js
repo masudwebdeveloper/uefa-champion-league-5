@@ -20,13 +20,7 @@ function getEventHandeler(elementId) {
       selectBtn.setAttribute('disabled', true);
    }
 }
-// function setButtonHandeler(btnId, name) {
-//    document.getElementById('btn-one').addEventListener('click', function () {
-//       const playerName = getElementValue('neymar');
-//       setPlayer('list-items', 'li', playerName);
-//       getEventHandeler('btn-one');
-//    })
-// }
+
 function setButtonHandeler(btnId, nameId) {
    document.getElementById(btnId).addEventListener('click', function () {
       const playerName = getElementValue(nameId);
@@ -35,6 +29,7 @@ function setButtonHandeler(btnId, nameId) {
       const listItems = document.getElementById('list-items');
       const child = listItems.children.length;
       if (child > 4) {
+         alert('Your Selected Player Is Five Done')
          const buttons = document.querySelectorAll('.selectbtn');
          for(const button of buttons)
          button.setAttribute('disabled', true);
